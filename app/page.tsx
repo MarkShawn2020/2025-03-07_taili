@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <main className="flex-1 w-full">
-      {/* 视差滚动封面部分 - 手工川品牌风格 */}
+      {/* 视差滚动封面部分 - 创新科技风格 */}
       <section className="relative w-full h-screen overflow-hidden">
         <div 
           className="absolute inset-0 z-0"
@@ -34,12 +34,12 @@ export default function Home() {
             className="object-cover"
             priority
           />
-          {/* 添加手工艺风格纹理滤镜 */}
-          <div className="absolute inset-0 bg-gradient-to-t from-amber-700/20 to-transparent mix-blend-overlay opacity-70"></div>
-          <div className="absolute inset-0 bg-craft-texture mix-blend-soft-light opacity-20"></div>
+          {/* 添加科技风格滤镜 */}
+          <div className="absolute inset-0 bg-gradient-to-t from-blue-700/20 to-transparent mix-blend-overlay opacity-70"></div>
+          <div className="absolute inset-0 bg-tech-texture mix-blend-soft-light opacity-20"></div>
         </div>
         
-        {/* 渐变背景 - 使用更符合手工艺风格的暖色调 */}
+        {/* 渐变背景 - 使用更符合科技风格的色调 */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-background"></div>
         
         <div className="absolute inset-0 flex items-center justify-center">
@@ -61,7 +61,7 @@ export default function Home() {
               </div>
             </motion.div>
             
-            {/* 装饰性元素 - 手工艺风格分隔线 */}
+            {/* 装饰性元素 - 科技风格分隔线 */}
             <div className="flex items-center justify-center gap-4 mb-6">
               <div className="h-px w-12 bg-gradient-to-r from-transparent to-primary/80"></div>
               <div className="w-4 h-4 rounded-full border border-primary/80 flex items-center justify-center">
@@ -81,13 +81,13 @@ export default function Home() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
             >
-              传承匠心精神，记录精彩瞬间，分享创新力量
+              AI 创新，DIY 精神，探索无限可能
             </motion.p>
             
-            {/* 按钮样式调整为更符合手工艺风格 */}
+            {/* 按钮样式调整为更符合科技风格 */}
             <div className="flex flex-col sm:flex-row gap-5 justify-center">
               <motion.button 
-                className="px-8 py-4 bg-amber-50 text-amber-900 font-medium rounded-lg hover:bg-opacity-95 transition-all shadow-lg hover:shadow-xl border border-amber-200/30"
+                className="px-8 py-4 bg-blue-50 text-blue-900 font-medium rounded-lg hover:bg-opacity-95 transition-all shadow-lg hover:shadow-xl border border-blue-200/30"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -119,11 +119,11 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* 内容区域 - 手工川品牌风格 */}
+      {/* 内容区域 - 创新科技风格 */}
       <section className="relative max-w-7xl mx-auto py-32 px-6">
-        {/* 添加背景装饰 - 手工艺风格元素 */}
-        <div className="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-amber-500/5 blur-3xl"></div>
-        <div className="absolute -bottom-20 -left-20 w-72 h-72 rounded-full bg-amber-700/5 blur-3xl"></div>
+        {/* 添加背景装饰 - 科技风格元素 */}
+        <div className="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-blue-500/5 blur-3xl"></div>
+        <div className="absolute -bottom-20 -left-20 w-72 h-72 rounded-full bg-purple-700/5 blur-3xl"></div>
         
         <motion.div 
           className="mb-24 text-center relative"
@@ -132,43 +132,43 @@ export default function Home() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <span className="inline-block text-sm font-semibold text-amber-600 dark:text-amber-400 tracking-wider uppercase mb-3">匠心之作</span>
+          <span className="inline-block text-sm font-semibold text-blue-600 dark:text-blue-400 tracking-wider uppercase mb-3">创新精神</span>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">手工川 · 会议介绍</h2>
           <div className="flex items-center justify-center gap-3 mb-10">
-            <div className="h-px w-12 bg-gradient-to-r from-transparent to-amber-600/80 dark:to-amber-400/80"></div>
-            <div className="w-3 h-3 rounded-full border border-amber-600/80 dark:border-amber-400/80"></div>
-            <div className="h-px w-12 bg-gradient-to-l from-transparent to-amber-600/80 dark:to-amber-400/80"></div>
+            <div className="h-px w-12 bg-gradient-to-r from-transparent to-blue-600/80 dark:to-blue-400/80"></div>
+            <div className="w-3 h-3 rounded-full border border-blue-600/80 dark:border-blue-400/80"></div>
+            <div className="h-px w-12 bg-gradient-to-l from-transparent to-blue-600/80 dark:to-blue-400/80"></div>
           </div>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto text-muted-foreground leading-relaxed">
-            2025年开年分享交流会在南川手工川顺利举行，手工川匠人们分享了传统工艺与现代创新的融合经验，共同探索匠心精神的传承与发展。
+            2025年开年分享交流会在南川手工川顺利举行，创新者们分享了AI技术与DIY精神的结合经验，探索如何用技术实现有趣且实用的创意。
           </p>
         </motion.div>
 
-        {/* 卡片网格布局 - 手工艺风格 */}
+        {/* 卡片网格布局 - 创新科技风格 */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-32">
           {[
             {
-              title: "匠心传承",
-              description: "资深手工艺人分享传统工艺的精髓和传承方法，展示匠心精神。",
-              icon: "🧵",
-              color: "from-amber-500/20 to-orange-500/20"
+              title: "AI创新",
+              description: "探索人工智能如何赋能DIY创作，打造属于自己的智能创意作品。",
+              icon: "🤖",
+              color: "from-blue-500/20 to-purple-500/20"
             },
             {
-              title: "创新探索",
-              description: "探讨传统手工艺与现代设计的融合，寻找创新发展的新方向。",
+              title: "创意实验",
+              description: "分享各种有趣的技术实验和创意项目，激发更多可能性。",
               icon: "💡",
-              color: "from-amber-600/20 to-red-500/20"
+              color: "from-cyan-600/20 to-blue-500/20"
             },
             {
-              title: "文化价值",
-              description: "挖掘手工艺的文化内涵与当代价值，提升手工艺的社会认同。",
-              icon: "🏛️",
-              color: "from-amber-700/20 to-brown-500/20"
+              title: "开源精神",
+              description: "倡导开放分享，共同进步，让创意和技术惠及更多人。",
+              icon: "🔄",
+              color: "from-green-500/20 to-blue-500/20"
             }
           ].map((item, index) => (
             <motion.div
               key={index}
-              className="relative p-10 rounded-lg border border-amber-200/30 dark:border-amber-800/30 shadow-sm hover:shadow-md transition-all overflow-hidden group"
+              className="relative p-10 rounded-lg border border-blue-200/30 dark:border-blue-800/30 shadow-sm hover:shadow-md transition-all overflow-hidden group"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -183,8 +183,8 @@ export default function Home() {
                 <p className="text-muted-foreground">{item.description}</p>
               </div>
               
-              {/* 手工艺风格指示器 */}
-              <div className="absolute bottom-5 right-5 text-amber-600 dark:text-amber-400 opacity-0 group-hover:opacity-100 transition-opacity">
+              {/* 科技风格指示器 */}
+              <div className="absolute bottom-5 right-5 text-blue-600 dark:text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity">
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
@@ -193,35 +193,35 @@ export default function Home() {
           ))}
         </div>
 
-        {/* 语音资料区域 - 手工川品牌风格 */}
+        {/* 语音资料区域 - 创新科技风格 */}
         <motion.div 
-          className="relative overflow-hidden rounded-lg bg-gradient-to-r from-amber-500/10 via-amber-100/10 to-amber-500/5 p-12 border border-amber-200/30 dark:border-amber-800/30 backdrop-blur-sm"
+          className="relative overflow-hidden rounded-lg bg-gradient-to-r from-blue-500/10 via-purple-100/10 to-blue-500/5 p-12 border border-blue-200/30 dark:border-blue-800/30 backdrop-blur-sm"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
           {/* 装饰性光效 */}
-          <div className="absolute -right-20 -top-20 w-60 h-60 rounded-full bg-amber-500/10 blur-3xl"></div>
-          <div className="absolute -left-20 -bottom-20 w-60 h-60 rounded-full bg-amber-700/10 blur-3xl"></div>
+          <div className="absolute -right-20 -top-20 w-60 h-60 rounded-full bg-blue-500/10 blur-3xl"></div>
+          <div className="absolute -left-20 -bottom-20 w-60 h-60 rounded-full bg-purple-700/10 blur-3xl"></div>
           
           <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="md:max-w-2xl">
-              <span className="inline-block text-sm font-semibold text-amber-600 dark:text-amber-400 tracking-wider uppercase mb-3">手工川·声音记忆</span>
-              <h3 className="text-3xl md:text-4xl font-bold mb-4">匠心对话</h3>
+              <span className="inline-block text-sm font-semibold text-blue-600 dark:text-blue-400 tracking-wider uppercase mb-3">手工川·创意分享</span>
+              <h3 className="text-3xl md:text-4xl font-bold mb-4">创新对话</h3>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                我们正在整理与手工艺人的深度对话、工艺技法讲解和创作灵感分享的音频内容，让您能够聆听匠人们的心声...
+                我们正在整理与创新者的深度对话、技术分享和创意灵感的音频内容，让您能够聆听更多有趣的想法和实践经验...
               </p>
               <div className="flex flex-wrap gap-4">
                 <motion.button 
-                  className="px-8 py-4 bg-amber-600 text-white dark:bg-amber-700 font-medium rounded-lg hover:opacity-90 transition shadow-md hover:shadow-lg"
+                  className="px-8 py-4 bg-blue-600 text-white dark:bg-blue-700 font-medium rounded-lg hover:opacity-90 transition shadow-md hover:shadow-lg"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.98 }}
                 >
                   预约提醒
                 </motion.button>
                 <motion.button 
-                  className="px-8 py-4 bg-background/80 backdrop-blur-sm text-foreground font-medium rounded-lg border border-amber-200/30 dark:border-amber-800/30 hover:bg-background transition"
+                  className="px-8 py-4 bg-background/80 backdrop-blur-sm text-foreground font-medium rounded-lg border border-blue-200/30 dark:border-blue-800/30 hover:bg-background transition"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.98 }}
                 >
@@ -230,10 +230,10 @@ export default function Home() {
               </div>
             </div>
             
-            {/* 音频视觉元素 - 手工艺风格 */}
+            {/* 音频视觉元素 - 科技风格 */}
             <div className="relative">
-              <div className="w-40 h-40 rounded-full bg-background/90 backdrop-blur border border-amber-200/30 dark:border-amber-800/30 flex items-center justify-center shadow-xl">
-                <svg className="w-20 h-20 text-amber-600 dark:text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <div className="w-40 h-40 rounded-full bg-background/90 backdrop-blur border border-blue-200/30 dark:border-blue-800/30 flex items-center justify-center shadow-xl">
+                <svg className="w-20 h-20 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15.536a5 5 0 010-7.072m12.728 3.536a3 3 0 00-4.243-4.243m-1.414 4.243a1 1 0 01-1.414 0m0 0a1 1 0 010-1.414m1.414 1.414L9 9" />
                 </svg>
               </div>
@@ -243,7 +243,7 @@ export default function Home() {
                 {[...Array(9)].map((_, i) => (
                   <motion.div 
                     key={i}
-                    className="w-1 bg-amber-600 dark:bg-amber-400 rounded-full"
+                    className="w-1 bg-blue-600 dark:bg-blue-400 rounded-full"
                     initial={{ height: 4 }}
                     animate={{ height: [4, 12, 4, 16, 4, 8, 4] }}
                     transition={{
