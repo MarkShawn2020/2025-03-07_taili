@@ -1,11 +1,11 @@
-# 太理 2025 开年分享交流会
+# 南川 2025 开年分享交流会
 
 <div align="center">
-  <img src="./public/cover.jpg" alt="太理 2025 开年分享交流会" style="max-width: 800px; width: 100%; height: auto;" />
+  <img src="./public/cover.jpg" alt="南川 2025 开年分享交流会" style="max-width: 800px; width: 100%; height: auto;" />
 </div>
 
 <p align="center">
-  记录南川太理 2025 年开年分享交流会的精彩瞬间
+  记录南川 2025 年开年分享交流会的精彩瞬间
 </p>
 
 <p align="center">
@@ -23,10 +23,11 @@
 
 ## 技术栈
 
-- 🚀 [Next.js 14](https://nextjs.org) App Router
-- 🎨 [Tailwind CSS](https://tailwindcss.com)
-- 🖼️ 响应式设计
-- 🌓 暗色模式支持
+- 🚀 [Next.js 14](https://nextjs.org) App Router - 最新的 React 框架
+- 🎨 [Tailwind CSS](https://tailwindcss.com) - 原子级样式系统
+- 🖼️ [Framer Motion](https://www.framer.com/motion/) - 流畅的动画效果
+- 🌈 [GSAP](https://greensock.com/gsap/) - 专业级动画库
+- 🌓 暗色模式 - 沉浸式体验
 
 ## 本地开发
 
