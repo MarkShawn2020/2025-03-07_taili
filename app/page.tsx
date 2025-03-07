@@ -1,65 +1,59 @@
-import Hero from "@/components/hero";
-import Logo from "@/components/logo";
-import { Button } from "@/components/ui/button";
-import { createClient } from "@/utils/supabase/server";
-import ConnectSupabaseSteps from "@/components/tutorial/connect-supabase-steps";
-import SignUpUserSteps from "@/components/tutorial/sign-up-user-steps";
-import { hasEnvVars } from "@/utils/supabase/check-env-vars";
+import Image from "next/image";
 
-// Landing Page Component
-const LandingPage = () => (
-  <div className="flex flex-col items-center justify-center py-20 text-center">
-    <Logo mode="svg" className="w-[180px] h-auto" color="currentColor" />
-    <h1 className="text-4xl font-bold m-4">Where Code Meets Magic</h1>
-  </div>
-);
-
-// Dashboard Component
-const Dashboard = () => (
-  <div className="flex flex-col gap-8 p-8">
-    <div className="flex justify-between items-center">
-      <h1 className="text-2xl font-bold">我的工作台</h1>
-      <Button className="px-4 py-2 rounded-lg">
-        新建项目
-      </Button>
-    </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {/* 这里可以放置项目卡片或其他内容 */}
-      <div className="border rounded-lg p-6 hover:shadow-lg transition-shadow">
-        <h3 className="font-semibold mb-2">示例项目</h3>
-        <p className="text-gray-600">开始创建您的第一个项目</p>
-      </div>
-    </div>
-  </div>
-);
-
-
-const Index =async () => {
-  const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
-
-  return user ? <Dashboard /> : (
-    <>
-    <LandingPage />
-    <h2 className="font-medium text-lg md:text-xl mb-2 md:mb-4">Get Started</h2>
-<SignUpUserSteps />
-    </>
-  )
-}
-
-export default async function Home() {
-
-
+export default function Home() {
   return (
     <main className="flex-1 w-full">
-        
-        {hasEnvVars ? <Index/> : (
-          <>
-          <h2 className="font-medium text-lg md:text-xl mb-2 md:mb-4">Get Started</h2>
-          <ConnectSupabaseSteps />
-          </>
-          )}
-      
+      {/* Cover Section */}
+      <section className="relative w-full h-screen">
+        <Image
+          src="/cover.jpg"
+          alt="太理 2025 开年分享交流会"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+          <div className="text-center text-white p-6">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">太理 2025 开年分享交流会</h1>
+            <p className="text-xl md:text-2xl">记录精彩瞬间，分享交流的力量</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Content Section */}
+      <section className="max-w-4xl mx-auto py-16 px-4">
+        <div className="space-y-12">
+          {/* 会议介绍 */}
+          <div>
+            <h2 className="text-3xl font-bold mb-6">会议介绍</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300">
+              2025年开年分享交流会在南川太理顺利举行，来自各个领域的优秀代表分享了他们的经验与见解。
+            </p>
+          </div>
+
+          {/* 内容板块 */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">精彩分享</h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                多位分享者带来了他们在各自领域的独到见解和实践经验。
+              </p>
+            </div>
+            <div className="p-6 bg-gray-50 dark:bg-gray-800 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">交流讨论</h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                与会者展开了热烈的讨论，碰撞出了新的火花。
+              </p>
+            </div>
+          </div>
+
+          {/* 语音资料预告 */}
+          <div className="text-center p-8 bg-gray-50 dark:bg-gray-800 rounded-lg">
+            <h3 className="text-2xl font-bold mb-4">语音资料</h3>
+            <p className="text-gray-600 dark:text-gray-300">即将推出，敬请期待...</p>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
